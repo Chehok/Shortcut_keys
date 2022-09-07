@@ -4,14 +4,14 @@ import java.awt.*;
 import java.io.*;
 import java.io.IOException;
 
-public class PCprogram extends JFrame{ //PC(Pursue Convenience)program에 JFrame 을 호출한다.
+public class Shortcut_keys extends JFrame{ //Shortcut_keys 프로그램에 JFrame 을 호출한다.
     Font font = new Font( "맑은 고딕", Font.PLAIN, 14); // 글씨체
     static JLabel la = new JLabel();
 
     Container c = getContentPane(); // 컨테이너 선언
     JButton b[] = new JButton[10]; // JButton 10개 선언
 
-    private PCprogram() {
+    private Shortcut_keys() {
         setTitle("단축키 프로그램"); //JFrame의 이름을 설정한다.
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // x키를 누르면 프로세스 종료
         GridLayout(); // 버튼을 생성하는 클래스
@@ -551,6 +551,6 @@ public class PCprogram extends JFrame{ //PC(Pursue Convenience)program에 JFrame
 
     public static void main(String[] args) {
         new FileManager().FileCheck(); // 파일(name.txt, location.txt)이 있는지 검사후 없을 경우 파일 생성(프로그램 실행 시 처음에만 작동함)
-        new PCprogram(); // PCprogram선언
+        new Shortcut_keys(); // Shortcut_keys_program선언
     }
 }
